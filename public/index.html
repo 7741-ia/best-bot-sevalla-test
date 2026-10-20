@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070817">
+  <meta name="description" content="BestBot, votre assistant WhatsApp intelligent et sécurisé.">
+  <title>BestBot — votre assistant WhatsApp</title>
+  <link rel="icon" href="/assets/bestbot-robot.png">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/public.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Accueil BestBot">
+        <span class="brand-orb"><img class="brand-icon" src="/assets/bestbot-robot.png" alt=""></span>
+        <span><strong>BEST<span>BOT</span></strong><small>INTELLIGENCE WHATSAPP</small></span>
+      </a>
+      <div class="top-actions"><span class="online-dot"><i></i> Système en ligne</span></div>
+    </header>
+
+    <main>
+      <section class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="pulse-dot"></span> L’ASSISTANT QUI ANTICIPE</p>
+          <h1>Bienvenue dans<br><span>la prochaine ère.</span></h1>
+          <p class="lead">BestBot transforme votre expérience WhatsApp en un espace intelligent, fluide et toujours à votre portée.</p>
+          <div class="feature-pills"><span><b>01</b> Simple à activer</span><span><b>02</b> Pensé pour vous</span><span><b>03</b> Toujours sous contrôle</span></div>
+          <div class="trust-note"><span class="trust-icon">✦</span><p>Une liaison sécurisée, une interface claire et un assistant conçu pour vous faire gagner du temps.</p></div>
+          <div class="hero-meta"><span><i></i> Connexion protégée</span><span>BESTBOT / 03.3</span></div>
+        </div>
+
+        <div class="visual-stack">
+          <section class="robot-panel" aria-label="BestBot, votre assistant futuriste">
+            <div class="scanline"></div><div class="robot-glow"></div>
+            <img src="/assets/bestbot-robot.png" alt="BestBot, assistant robotique futuriste" class="robot-image">
+            <div class="robot-label"><span class="label-dot"></span><span><strong>BESTBOT CORE</strong><small>Intelligence active</small></span><b>AI</b></div>
+            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          </section>
+
+          <section class="pair-card" aria-labelledby="pair-title">
+            <div class="card-heading">
+              <div class="mini-brand"><span class="mini-orb"><img src="/assets/bestbot-robot.png" alt=""></span><div><span class="eyebrow">VOTRE ACCÈS</span><h2 id="pair-title">Activer BestBot</h2></div></div>
+              <span class="live-indicator" aria-label="En ligne"></span>
+            </div>
+            <div class="capacity-line"><span><i class="pulse-dot"></i> Liaison sécurisée</span><span id="capacity">Prêt à commencer</span></div>
+            <form id="pair-form" novalidate>
+              <label for="phone">Votre numéro WhatsApp</label>
+              <div class="phone-input"><span class="plus">+</span><input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="243XXXXXXXXX" maxlength="16" required aria-describedby="phone-help"></div>
+              <p id="phone-help" class="field-help">Ajoutez l’indicatif de votre pays, sans espaces ni signe +.</p>
+              <div class="consent-box"><span class="shield">⌁</span><p>Utilisez un numéro qui vous appartient ou que vous êtes autorisé à gérer. Ne partagez jamais le code reçu.</p></div>
+              <button id="pair-submit" class="primary-button" type="submit"><span>Recevoir le code</span><span aria-hidden="true">↗</span></button>
+            </form>
+            <section id="pair-result" class="pair-result" hidden aria-live="polite">
+              <div id="result-status" class="result-status"><span class="spinner"></span><span>Préparation de votre liaison…</span></div>
+              <div id="code-area" class="code-area" hidden>
+                <p class="eyebrow">VOTRE CODE DE LIAISON</p>
+                <div class="code-row"><code id="pair-code">••••-••••</code><button id="copy-code" class="icon-button" type="button" aria-label="Copier le code">Copier</button></div>
+                <p id="expiry" class="field-help">Gardez cette page ouverte : votre code apparaîtra ici.</p>
+                <ol class="steps"><li>Ouvrez WhatsApp sur votre téléphone.</li><li>Allez dans <strong>Paramètres → Appareils liés</strong>.</li><li>Appuyez sur <strong>Lier un appareil</strong>, puis sur <strong>Lier avec un numéro de téléphone</strong>.</li><li>Saisissez le code affiché ici.</li></ol>
+              </div>
+              <p id="result-error" class="error-text" role="alert" hidden></p>
+              <button id="new-request" class="text-button" type="button" hidden>Recommencer</button>
+            </section>
+            <p class="card-footnote">BestBot est un service indépendant, non affilié à WhatsApp.</p>
+          </section>
+        </div>
+      </section>
+
+      <section class="community-section">
+        <div><p class="eyebrow">LE SIGNAL RESTE OUVERT</p><h2>Une question&nbsp;? Restez connecté.</h2><p class="muted">Retrouvez BestBot sur WhatsApp pour les annonces, les conseils et les échanges avec la communauté.</p></div>
+        <div class="community-links">
+          <a class="community-link" href="https://whatsapp.com/channel/0029VbBiakX7YScuPvQWwR1v" target="_blank" rel="noopener noreferrer"><span class="link-icon">◉</span><span><strong>Chaîne WhatsApp</strong><small>Annonces & nouveautés</small></span><span class="arrow">↗</span></a>
+          <a class="community-link" href="https://chat.whatsapp.com/G2zeFC6nVvE9Mjd5aRUa1q?s=cl&amp;p=a&amp;mlu=4&amp;ilr=4" target="_blank" rel="noopener noreferrer"><span class="link-icon">◌</span><span><strong>Groupe WhatsApp</strong><small>Échanger avec la communauté</small></span><span class="arrow">↗</span></a>
+        </div>
+      </section>
+      <footer class="footer"><span>BESTBOT · L’intelligence, simplement.</span><span class="footer-status">Liaison sécurisée</span></footer>
+    </main>
+  </div>
+</body>
+</html>

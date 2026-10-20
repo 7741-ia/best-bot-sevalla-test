@@ -1,0 +1,14 @@
+.git
+.github
+node_modules
+.env
+.env.*
+!.env.example
+session
+session.backup.*
+auth_info_baileys
+data/*.json
+multisession-data/
+temp
+tmp
+*.log

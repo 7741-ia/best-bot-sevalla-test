@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070817">
+  <meta name="robots" content="noindex,nofollow">
+  <title>BestBot — espace privé</title>
+  <link rel="icon" href="/assets/bestbot-robot.png">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/admin.js" defer></script>
+</head>
+<body class="admin-body">
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Accueil BestBot"><span class="brand-orb"><img class="brand-icon" src="/assets/bestbot-robot.png" alt=""></span><span><strong>BEST<span>BOT</span></strong><small>ESPACE GESTION</small></span></a>
+      <a class="quiet-link" href="/">← Retour à l’accueil</a>
+    </header>
+    <main class="admin-main">
+      <section id="login-view" class="login-card">
+        <p class="eyebrow"><span class="pulse-dot"></span> ACCÈS RÉSERVÉ</p>
+        <h1>Mon espace</h1>
+        <p class="muted">Connectez-vous pour suivre les comptes WhatsApp reliés à BestBot et gérer leur accès.</p>
+        <form id="login-form" class="login-form">
+          <label for="username">Nom d’utilisateur</label><input id="username" name="username" type="text" autocomplete="username" required>
+          <label for="password">Mot de passe</label><input id="password" name="password" type="password" autocomplete="current-password" required>
+          <button id="login-submit" class="primary-button" type="submit"><span>Accéder à mon espace</span><span aria-hidden="true">→</span></button>
+          <p id="login-error" class="error-text" role="alert" hidden></p>
+        </form>
+        <p class="card-footnote">Cet espace est réservé à la personne responsable de BestBot.</p>
+      </section>
+
+      <section id="dashboard-view" class="dashboard" hidden>
+        <div class="dashboard-heading"><div><p class="eyebrow">VOTRE ESPACE</p><h1>Comptes WhatsApp</h1><p class="muted">Retrouvez ici les comptes reliés à BestBot. Vous pouvez interrompre ou retirer une liaison à tout moment.</p></div><button id="logout-button" class="secondary-button" type="button">Déconnexion</button></div>
+        <div class="stats-grid">
+          <article class="stat-card"><span>Comptes enregistrés</span><strong id="active-count">—</strong><small id="capacity-label">sur — au total</small></article>
+          <article class="stat-card"><span>En ligne</span><strong id="connected-count">—</strong><small>Actuellement disponibles</small></article>
+          <article class="stat-card"><span>À contrôler</span><strong id="attention-count">—</strong><small>Une action peut être nécessaire</small></article>
+          <article class="stat-card"><span>Espace utilisé</span><strong id="storage-used">—</strong><small id="storage-detail">sur — au total</small></article>
+        </div>
+        <div class="session-toolbar"><div><h2>Vos comptes</h2><p id="updated-label" class="muted">Mise à jour en cours…</p></div><div class="toolbar-actions"><input id="session-search" type="search" placeholder="Rechercher un numéro" aria-label="Rechercher un numéro"><button id="refresh-button" class="secondary-button" type="button">Actualiser</button></div></div>
+        <p id="dashboard-error" class="error-banner" hidden></p>
+        <div id="session-list" class="session-list" aria-live="polite"></div>
+        <div id="empty-state" class="empty-state" hidden><span class="empty-icon">◎</span><h3>Aucun compte relié pour le moment</h3><p>Les comptes apparaîtront ici dès qu’ils commenceront à se connecter.</p></div>
+        <p class="admin-note"><strong>À retenir :</strong> ne partagez jamais vos codes. Interrompez une liaison avant de retirer un compte. Le retrait efface aussi les informations enregistrées pour ce compte.</p>
+      </section>
+    </main>
+    <footer class="footer"><span>Espace gestion BestBot</span><a href="https://whatsapp.com/channel/0029VbBiakX7YScuPvQWwR1v" target="_blank" rel="noopener noreferrer">Chaîne WhatsApp ↗</a></footer>
+  </div>
+</body>
+</html>
